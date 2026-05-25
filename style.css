@@ -8,28 +8,27 @@ body {
   background: #f7f1f2;
   font-family: 'Poppins', sans-serif;
 
-  min-height: 100vh;
-
   display: flex;
   justify-content: center;
   align-items: center;
 
-  padding: 20px;
+  min-height: 100vh;
+
+  overflow-x: hidden;
 }
 
 .album {
+
   width: 100%;
-  max-width: 420px;
+  max-width: 430px;
+
+  min-height: 100vh;
 
   background: white;
 
-  border-radius: 24px;
+  position: relative;
 
   overflow: hidden;
-
-  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
-
-  position: relative;
 }
 
 .page {
@@ -42,18 +41,26 @@ body {
 }
 
 .page img {
+
   width: 100%;
-  height: 500px;
+
+  height: 65vh;
+
   object-fit: cover;
 }
 
 .page p {
+
   padding: 24px;
+
   padding-bottom: 120px;
 
   font-size: 16px;
-  line-height: 1.6;
+
+  line-height: 1.7;
+
   color: #444;
+
   text-align: center;
 }
 
@@ -62,12 +69,14 @@ button {
   position: fixed;
 
   bottom: 20px;
+
   left: 50%;
 
   transform: translateX(-50%);
 
-  width: 90%;
-  max-width: 400px;
+  width: calc(100% - 40px);
+
+  max-width: 390px;
 
   border: none;
 
@@ -84,21 +93,17 @@ button {
 
   cursor: pointer;
 
-  transition: 0.3s;
-
   box-shadow: 0 10px 25px rgba(0,0,0,0.2);
 
-  z-index: 1000;
-}
-
-button:hover {
-  background: #e6395d;
+  z-index: 999;
 }
 
 .final-page {
-  min-height: 700px;
+
+  min-height: 100vh;
 
   display: flex;
+
   justify-content: center;
   align-items: center;
 
@@ -110,14 +115,20 @@ button:hover {
 }
 
 .final-text h1 {
+
   font-size: 42px;
+
   color: #ff4d6d;
+
   margin-bottom: 24px;
 }
 
 .final-text p {
+
   font-size: 18px;
+
   line-height: 1.8;
+
   color: #444;
 }
 
