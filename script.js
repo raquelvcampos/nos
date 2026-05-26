@@ -20,3 +20,22 @@ nextBtn.addEventListener("click", () => {
   }
 
 });
+
+const music = document.getElementById("music");
+const musicBtn = document.getElementById("musicBtn");
+
+musicBtn.addEventListener("click", async () => {
+
+  try {
+
+    await music.play();
+
+    musicBtn.innerHTML = "❤️ Tocando";
+
+  } catch (err) {
+
+    musicBtn.innerHTML = "⚠️ Toque novamente";
+
+  }
+
+});
