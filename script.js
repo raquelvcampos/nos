@@ -30,11 +30,11 @@ musicBtn.addEventListener("click", async () => {
 
     await music.play();
 
-    musicBtn.remove();
+    musicBtn.style.display = "none";
 
   } catch (err) {
 
-    alert("Toque novamente para iniciar a música ❤️");
+    alert("Toque novamente ❤️");
 
   }
 
