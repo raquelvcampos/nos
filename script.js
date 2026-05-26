@@ -30,7 +30,7 @@ musicBtn.addEventListener("click", async () => {
 
     await music.play();
 
-    musicBtn.style.display = "none";
+    musicBtn.remove();
 
   } catch (err) {
 
