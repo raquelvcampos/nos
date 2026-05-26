@@ -100,7 +100,7 @@ body {
   z-index: 999;
 }
 
-/* BOTÃO DE MÚSICA */
+/* BOTÃO DA MÚSICA */
 
 .music-btn {
 
@@ -109,9 +109,11 @@ body {
   top: 20px;
   right: 20px;
 
-  width: auto;
+  width: auto !important;
 
-  padding: 12px 16px;
+  max-width: none !important;
+
+  padding: 12px 16px !important;
 
   border: none;
 
@@ -130,6 +132,12 @@ body {
   box-shadow: 0 5px 20px rgba(0,0,0,0.12);
 
   z-index: 9999;
+
+  transform: none !important;
+
+  left: auto !important;
+
+  bottom: auto !important;
 }
 
 .final-page {
