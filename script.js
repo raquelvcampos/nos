@@ -30,11 +30,11 @@ musicBtn.addEventListener("click", async () => {
 
     await music.play();
 
-    musicBtn.innerHTML = "❤️ Tocando";
+    musicBtn.style.display = "none";
 
   } catch (err) {
 
-    musicBtn.innerHTML = "⚠️ Toque novamente";
+    alert("Toque novamente para iniciar a música ❤️");
 
   }
 
